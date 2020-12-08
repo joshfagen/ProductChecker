@@ -1,0 +1,30 @@
+
+
+.fieldset{
+    border: hidden;
+    padding: 0;
+    height:2rem;
+    margin:0;
+
+}
+
+#productDiv{
+    text-align: center;
+    border: 1px solid lightgray;
+    width:15rem;
+    padding-bottom: 2rem;;
+}
+
+
+.setStatusRadio{
+    background-color: dimgray;
+    width: 1.4rem;
+    height:1rem;
+    padding: .5rem;
+}
+
+input{
+    width: 1.4rem;
+    height:.9rem;
+}
+

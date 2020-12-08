@@ -1,0 +1,49 @@
+.container{
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem 15rem 15rem 15rem 15rem 15rem;
+    grid-template-rows: 16rem 16rem 16rem;
+    grid-gap: 1rem;
+    justify-content: center;
+    width:100%
+}
+
+/*button{
+    height: 2rem;
+    width: 5rem;
+    margin: 1rem;
+}*/
+
+#statusDisplayRadioDiv{
+    text-align: center;
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+.buttonDiv{
+    display:flex;
+text-align: center;
+    width: 100%;
+    justify-content:space-between;
+    padding:1rem;
+}
+
+#buttonDiv1{
+    margin-left:3.5rem;
+}
+
+#buttonDiv2{
+    transform: translateX(1.1rem)
+}
+
+#buttonDiv3{
+    margin-right:3.2rem;
+}
+
+#titleAndDrop{
+    display:flex;
+    margin-top: 4rem;
+}
+
+.statuschooserLabel{
+    padding: .5rem;
+}

@@ -1,0 +1,30 @@
+#nav{
+    margin-left: 0;
+    /* margin-bottom: 5em; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#nav a{
+    margin: 1em;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+#nav a:hover {
+    background: gray;
+
+    border-radius: 5px;
+    color: white;
+
+}
+
+
