@@ -39,7 +39,7 @@ fetchCategories();
 
 
     const manageFetch = ()=>{
-      console.log('in manage fetch')
+      console.log('in manage fetch!')
 
  switch(filter){
    case 'brands':
