@@ -90,7 +90,7 @@ const Product = ({asin,image,parentAsin,goodChecked}) => {
         </fieldset>
         </form>
         <a href={`https://www.amazon.com/dp/${asin}` } target="_blank">
-        <img  src={image} style={{height: "100%",width: "95%"}}></img>
+        <img  src={`${image.substring(0, 67)}1500.jpg`} style={{height: "100%",width: "95%"}}></img>
         </a>
         </div>
         // </div>

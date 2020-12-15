@@ -300,7 +300,7 @@ const countDisplay=titleDisplay?<CountDisplay count={count} statusName={statusNa
 </div>
 
                 <div id="productsGrid" className="container">
-    { products.map(p => <Product title={p.title} asin={p.asin} image={p.image} parentAsin={p.parent_asin} goodChecked={p.goodChecked}/>)}
+    { products.map(p => <Product title={p.title} asin={p.asin} image={p.imageUrl} parentAsin={p.parent_asin} goodChecked={p.goodChecked}/>)}
 
     </div>
     </>
