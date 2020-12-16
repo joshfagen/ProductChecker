@@ -58,7 +58,6 @@ const Product = ({name, asin,image,parentAsin,goodChecked}) => {
             min = i + 1;
           }
         }
-        console.log(min)
         shortName = name.substring(0, min) + '...';
       } else {
         shortName = name;
