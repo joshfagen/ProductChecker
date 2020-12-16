@@ -104,9 +104,12 @@ const fetchCount = async()=>{
     const resp = await fetch(`asins/count?status=${status}&&brand=${brand}&&category=${uriEncodedCategory}`, {
       credentials: 'include',
     });
+    console.log(resp)
     if (!resp.ok) {
+
       return console.error(resp.statusText)
     }
+    console.log('logging the count pre response');
     const theCount = await resp.json();
     setCount(theCount[0].count);
     console.log('theCount',theCount[0].count)
@@ -130,7 +133,7 @@ const fetchCount = async()=>{
         const fetchProductsByBrand = async()=>{
           console.log('fetchProductsByBrand','status',status,'skip',skip)
           let uriEncodedBrand = encodeURIComponent(brand.trim().replace(/ /g, '%20'));
-          const resp = await fetch(`asins/byBrand/${status}/${skip}?brand=${uriEncodedBrand}&desc=${desc}`, {
+          const resp = await fetch(`/asins/byBrand/${status}/${skip}?brand=${uriEncodedBrand}&desc=${desc}`, {
             credentials: 'include',
           });
           if (!resp.ok) {
@@ -300,7 +303,7 @@ const countDisplay=titleDisplay?<CountDisplay count={count} statusName={statusNa
 </div>
 
                 <div id="productsGrid" className="container">
-    { products.map(p => <Product title={p.title} asin={p.asin} image={p.imageUrl} parentAsin={p.parent_asin} goodChecked={p.goodChecked}/>)}
+    { products.map(p => <Product name={p.name} title={p.title} asin={p.asin} image={p.imageUrl} parentAsin={p.parent_asin} goodChecked={p.goodChecked}/>)}
 
     </div>
     </>
