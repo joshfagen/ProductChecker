@@ -111,8 +111,15 @@ const fetchCount = async()=>{
     }
     console.log('logging the count pre response');
     const theCount = await resp.json();
-    setCount(theCount[0].count);
-    console.log('theCount',theCount[0].count)
+    if(theCount) {
+      setCount(theCount[0].count);
+      console.log('logging count')
+      console.log(theCount)
+    } else {
+      setCount(0);
+    }
+    
+    // console.log('theCount',theCount[0].count)
     }
 
     const fetchProductsByStatus = async()=>{
